@@ -1,0 +1,164 @@
+section {
+  width: 100%;
+  height: 100vh;
+  border: solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -3px;
+  position: static;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .7s ease;
+}
+
+@media screen and (min-width: 801px) {
+  section {
+    background-image: url('https://img.freepik.com/foto-gratis/reflejo-luces-montana-lago-capturado-parco-ciani-lugano-suiza_181624-24209.jpg?t=st=1720192244~exp=1720195844~hmac=327894a96776da89ba703fb359a10f10ca2f8ea754022f61e2aaee4b7e015136&w=826');
+  }
+}
+
+/* Media query para pantallas medianas (768px - 1199px) */
+@media screen and (max-width: 800px) {
+  section {
+    background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/01/fondo-hd-3.jpg?tf=640x');
+  }
+}
+
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media screen and (max-width: 500px) {
+  section {
+    background-image: url('https://w0.peakpx.com/wallpaper/949/976/HD-wallpaper-nubes-aesthetic-estrellas-fondo-de-pantalla-luna-noche-sky.jpg');
+  }
+}
+
+section .camaraDelantera {
+  transition: all .7s ease;
+  width: 20px;
+}
+
+@media screen and (min-width: 801px) {
+  .camaraDelantera {
+  border: solid rgb(23, 143, 199);
+  border-radius: 9999px;
+  margin-top: 2%;
+  }
+}
+
+/* Media query para pantallas medianas (768px - 1199px) */
+@media screen and (max-width: 800px) {
+  .camaraDelantera {
+  border: solid rgb(23, 199, 161);
+  border-radius: 9999px;
+  margin-top: 4%;
+  }
+}
+
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media screen and (max-width: 500px) {
+  .camaraDelantera {
+  border: solid rgb(33, 216, 33);
+  border-radius: 9999px;
+  margin-top: 5%;
+  }
+}
+
+
+.appsFondoPantalla {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px ;
+  height: 100vh;
+}
+
+.appsFondoPantalla div > button{
+  font-size: 40px;
+  border: none;
+  margin: 20px;
+  background: none;
+  cursor: pointer;
+  transition: all .9s ease;
+}
+
+@media screen and (max-width: 500px) {
+  .apps {
+  font-size: 40px;
+  margin: 20px;
+  background: none;
+  color: aquamarine;
+  }
+}
+
+
+#todasLasApps {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: -400px;
+  background: rgba(255, 255, 255, .5);
+  filter: blur(.5px);
+  height: 100vh;
+  width: 100%;
+  animation: subir ease 3s both;
+  overflow: hidden;
+}
+
+@keyframes subir {
+  to {
+    transform: translateY( 0px)
+  } from {
+    transform: translateY(100%);
+  }
+}
+
+
+
+.appsTodas {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr 1fr 1fr);
+  height: calc(100% + 15px);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}  
+
+.appsTodas::-webkit-scrollbar {
+  display: none;
+}
+
+.appsTodas div > button {
+  border: none;
+  background: none;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.menuApps #menuAppsButton {
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: aqua;
+  cursor: pointer;
+  margin-bottom: 20px;
+  z-index: 99999999;
+}
+
+
+@media screen and (min-width: 801px) {
+  #menuAppsButton {
+    display: none;
+  }
+}
+
